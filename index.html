@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify C - Your favourite music is here</title>
+    <link rel = "stylesheet" href = "style.css"> 
+</head>
+<body>
+    <nav>
+        <ul>
+            <li class = "brand"><img src= "logo.png" alt= "Spotify" > Spotify </li>
+            <li> Home</li>
+            <li> About</li>
+        </ul> 
+    </nav>
+    
+    <div class="container">
+        <div class = "SongList">
+            <h1>Best of NCS - No Copyright Sounds</h1>
+            <div class= "SongItemContainer">
+                <div class= "SongItem">
+                    <img src= "Covers/1.jpg" alt="1">
+                    <span> O Mere Dil Ke Chain</span>
+                    <span class= "SongListplay"><span class = "timestamp">3:49<i id= "0" class="far SongItemPlay fa-play-circle"></i> </span></span>
+                </div>
+                <div class= "SongItem">
+                    <img src= "Covers/2.jpg" alt="1">
+                    <span> Lag Ja Gale</span>
+                    <span class= "SongListplay"><span class = "timestamp">4:40<i id= "1" class="far SongItemPlay fa-play-circle"></i> </span></span>
+                </div>
+                <div class= "SongItem">
+                    <img src= "Covers/3.jpg" alt="1">
+                    <span> Phela Nasha</span>
+                    <span class= "SongListplay"><span class = "timestamp">4:01<i id= "2" class="far SongItemPlay fa-play-circle"></i> </span></span>
+                </div>
+                <div class= "SongItem">
+                    <img src= "Covers/4.jpg" alt="1">
+                    <span> Mere Sapnon Ki Rani </span>
+                    <span class= "SongListplay"><span class = "timestamp">3:58<i id= "3" class="far SongItemPlay fa-play-circle"></i> </span></span>
+                </div>
+                <div class= "SongItem">
+                    <img src= "Covers/5.jpg" alt="1">
+                    <span> Kuch Na Kaho</span>
+                    <span class= "SongListplay"><span class = "timestamp">4:04<i id= "4" class="far SongItemPlay fa-play-circle"></i> </span></span>
+                </div>
+                <div class= "SongItem">
+                    <img src= "Covers/6.jpg" alt="1">
+                    <span> Yeh Raat Bheegi Bheegi</span>
+                    <span class= "SongListplay"><span class = "timestamp">4:08<i id= "5" class="far SongItemPlay fa-play-circle"></i> </span></span>
+                </div>
+                <div class= "SongItem">
+                    <img src= "Covers/7.jpg" alt="1">
+                    <span> Tujhse Naraz Nahi Zindagi</span>
+                    <span class= "SongListplay"><span class = "timestamp">4:12<i id= "6" class="far SongItemPlay fa-play-circle"></i> </span></span>
+                </div>
+                <div class= "SongItem">
+                    <img src= "Covers/8.jpg" alt="1">
+                    <span> Mere Mehboob Kayamat Hogi</span>
+                    <span class= "SongListplay"><span class = "timestamp">4:12<i id= "7" class="far SongItemPlay fa-play-circle"></i> </span></span>
+                </div>
+                <div class= "SongItem">
+                    <img src= "Covers/9.jpg" alt="1">
+                    <span> Gulabi Aankhein</span>
+                    <span class= "SongListplay"><span class = "timestamp">3:44<i id= "8" class="far SongItemPlay fa-play-circle"></i> </span></span>
+                </div>
+                <div class= "SongItem">
+                    <img src= "Covers/10.jpg" alt="1">
+                    <span> Ek Pyaar Ka Nagma Hai</span>
+                    <span class= "SongListplay"><span class = "timestamp">4:36<i id= "9" class="far SongItemPlay fa-play-circle"></i> </span></span>
+                </div>
+            </div>    
+        </div>
+        <div class = "SongBanner"></div>
+    </div>
+
+    <div class = "bottom">
+        <input type = "range" name = "range" id = "myProgressBar" min = "0" value="0" max = "100">
+        <div class= "icons">
+            <!-- fontawesome icons-->
+            <i class="far  fa-3x fa-step-backward" id = "previous"></i> 
+            <i class="far  fa-3x fa-play-circle" id = "masterPlay"></i>
+            <i class="far  fa-3x fa-step-forward" id = "next"></i>     
+        </div>
+        <div class="SongInfo">
+            <img src="playing.gif" width = 43px alt="" id="gif"> <span id="masterSongName"></span>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/c52954b8ce.js" crossorigin="anonymous"></script>
+    <script src = "script.js"></script>
+</body>
+</html>
